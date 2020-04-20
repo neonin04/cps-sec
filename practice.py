@@ -12,16 +12,3 @@ def arry2D() :
 
 for i in range(20) :
     arry2D()
-
-
-
-
-airline = []
-time = []
-cost = []
-
-for b in box :
-    airline.append(b.find("div", class_ = "info_air").find("span", class_ = "txt_airline").text)
-    time.append(b.find("dl", class_ = "list_time").find("dd", class_ = "time_required").text)
-    cost.append(b.find("div", class_ = "info_price").find("span", class_ = "txt_price").text)
-    print(airline)
