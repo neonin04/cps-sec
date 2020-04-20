@@ -14,6 +14,7 @@ box = bs.find_all("dl", class_ = "lst_dsc")
 title = []
 ratio = []
 reserve = []
+
 for b in box :
     title.append(b.find("dt", class_ = "tit").find("a").text) #제목
     ratio.append(b.find("div", class_ = "star_t1").find("span", class_ = "num").text) #평점
