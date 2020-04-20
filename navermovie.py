@@ -21,7 +21,7 @@ for b in box :
         reserve.append(b.find("div", class_ = "star_t1 b_star").find("span", class_ = "num").text) #예매율
     else:
         reserve.append("0")
-
+ 
 movieInfo = []
 for i in range(len(box)) :
     movie = []
@@ -33,6 +33,8 @@ for i in range(len(box)) :
     
 for i in movieInfo :
     print(i)
+
+
 
 
 
