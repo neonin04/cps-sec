@@ -10,8 +10,10 @@ html = req.text
 
 bs = BeautifulSoup(html, "html.parser")
 
-#pages = bs.select(".page > a")
-#print(len(pages))
+
+pages = bs.find("p", class_ = "page").find_all("a")
+print(len(pages))
+
 
 box = bs.find_all("td", class_ = "goodsTxtInfo")
 
