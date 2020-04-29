@@ -7,6 +7,8 @@ import time
 path = os.getcwd() + "/6th assignment/chromedriver.exe"
 driver = webdriver.Chrome(path)
 
+#쿠팡에서 '마스크' 검색
+
 try :
     driver.get("https://www.coupang.com/") #사이트에 접속
     time.sleep(1)
